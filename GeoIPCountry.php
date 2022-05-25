@@ -337,7 +337,7 @@ class GeoIPCountry
                                 $filename = current(explode(':',$this->ExpandIPAddress($ipMin))).'.php';
                                 break;
                             default:
-                                if (count($temp)<7) continue;
+                                if (count($temp)<7) continue 2;
                                 $ipMin = (int) $temp[0];
                                 $ipMax = (int) $temp[1];
                                 $Alpha2 = $temp[4];
